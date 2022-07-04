@@ -25,6 +25,8 @@ container.training/
 .config/gedit/
 .config/GIMP/
 .vim/
+.minikube/
+.gitlab-runner/
 .config/zoomus.conf
 .sudo_as_admin_successful
 .bash_history
