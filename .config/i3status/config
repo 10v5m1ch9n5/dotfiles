@@ -12,13 +12,19 @@ general {
 }
 
 order += "ipv6"
+order += "path_exists VPN"
 order += "wireless _first_"
 order += "ethernet _first_"
+order += "volume master"
 order += "battery all"
 order += "disk /"
 order += "load"
 order += "memory"
 order += "tztime local"
+
+path_exists VPN {
+        path = "/proc/sys/net/ipv4/conf/tun0"
+}
 
 wireless _first_ {
         format_up = "W: (%quality at %essid) %ip"
@@ -50,4 +56,14 @@ memory {
 
 tztime local {
         format = "%Y-%m-%d %H:%M:%S"
+}
+
+volume master {
+
+        format = "♪: %volume"
+
+
+        format_muted = "♪: muted (%volume)"
+
+        device = "pulse0"
 }
