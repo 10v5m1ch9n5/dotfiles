@@ -69,6 +69,9 @@ bindsym $mod+d exec rofi -show run -theme solarized
 #Change wallpaper
 bindsym $mod+Shift+W exec feh --bg-fill --randomize --recursive ~/.wallpapers
 
+#Screenshot
+bindsym $mod+Shift+S exec xfce4-screenshooter
+
 # change focus
 #bindsym $mod+h focus left
 #bindsym $mod+j focus down
@@ -204,7 +207,7 @@ bar {
 	status_command bumblebee-status -m xrandr mpd pasink nic \
 	disk memory cpu2 battery datetime \
 	-p mpd.layout=mpd.main \
-	mpd.format='{file2}' \
+	mpd.format='{file2} | ({position}/{duration})' \
 	cpu2.layout='cpu2.cpuload cpu2.coresload cpu2.temp' \
 	cpu2.colored=1 \
 	cpu2.temp_pattern='temp1_input' \

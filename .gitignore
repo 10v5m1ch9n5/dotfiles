@@ -9,6 +9,9 @@ django-app/
 cmdb-ui/
 kubernetes/
 snap/
+cpp/
+wiki/
+Musique/
 inshack-scoreboard/
 container.training/
 .cache/
@@ -22,8 +25,20 @@ container.training/
 .gnupg/
 .pki/
 .zoom/
+.poetry/
 .config/gedit/
+.config/cmus/
+.config/eog/
+.config/libreoffice/
+.config/enchant/
+.config/evolution/
+.config/dconf/
 .config/GIMP/
+.config/vlc/
+.config/kazam/
+.config/keepassxc/
+.config/k9s/
+.config/obs-studio/
 .vim/
 .minikube/
 .gitlab-runner/
@@ -33,4 +48,6 @@ container.training/
 .yarnrc
 .wget-hsts
 .viminfo
+.python_history
+.pypirc
 
