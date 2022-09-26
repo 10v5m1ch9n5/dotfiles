@@ -25,7 +25,7 @@ font pango:monospace 8
 exec --no-startup-id dex --autostart --environment i3
 exec xrandr --auto --output eDP-1 --mode 1920x1080 --same-as DP-1 --brightness 0.9
 exec feh --bg-fill --randomize --recursive ~/.wallpapers
-exec picom --config ~/.config/picom/picom.conf
+exec picom --vsync --config ~/.config/picom/picom.conf
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
