@@ -23,9 +23,10 @@ font pango:monospace 8
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
-exec xrandr --auto --output eDP-1 --mode 1920x1080 --same-as DP-1 --brightness 0.9
-exec feh --bg-fill --randomize --recursive ~/.wallpapers
-exec picom --config ~/.config/picom/picom.conf
+exec picom --backend glx --vsync --glx-no-stencil --glx-no-rebind-pixmap --config ~/.config/picom/picom.conf
+exec mons -e left
+exec xrdb ~/.Xresources
+exec setxkbmap fr
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -194,7 +195,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym $mod+l exec i3lock --color=4d0066
+bindsym $mod+l exec i3lock --color=000000
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
